@@ -1,0 +1,60 @@
+[project]
+name = "minions"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Antonio Reid", email = "read.musik@gmail.com"},
+    {name = "Sabri, Avanika, and Dan"},
+]
+dependencies = [
+    "setuptools>=79.0.0",
+    "PyMuPDF",
+    "anthropic",
+    "firecrawl-py",
+    "google-genai",
+    "google_search_results",
+    "groq",
+    "mcp",
+    "ollama",
+    "openai",
+    "pymupdf",
+    "rank_bm25",
+    "requests",
+    "serpapi",
+    "spacy",
+    "st-theme",
+    "streamlit>=1.44.1",
+    "tiktoken",
+    "together",
+    "nanobind==2.4.0",
+    "cartesia-metal @ file:///${PROJECT_ROOT}/../edge/cartesia-metal",
+    "mlx==0.22.1",
+    "torch>=2.6.0",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+mlx = [
+    "mlx-lm",
+]
+csm-mlx = [
+    "csm-mlx @ git+https://github.com/senstella/csm-mlx.git",
+]
+embeddings = [
+    "chromadb",
+    "faiss-cpu",
+    "sentence-transformers",
+    "torch",
+]
+
+[project.scripts]
+minions = "minions_cli:main"
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "-e file:///${PROJECT_ROOT}/#egg=minions[mlx]",
+]

@@ -60,7 +60,7 @@
     "fuse.js": "6.6.2",
     "moment-timezone": "0.5.43",
     "postcss-loader": "4.3.0",
-    "marked": "4.3.0",
+    "marked": "5.0.0",
     "style-loader": "2.0.0"
   }
 }

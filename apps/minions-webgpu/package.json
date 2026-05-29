@@ -13,6 +13,6 @@
     },
     "dependencies": {
         "@mlc-ai/web-llm": "^0.2.79",
-        "fastify": "^5.3.3"
+        "fastify": "^5.8.5"
     }
 }

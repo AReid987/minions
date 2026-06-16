@@ -46,7 +46,7 @@
     "@syncfusion/ej2-react-interactive-chat": "^29.1.33",
     "react": "18.3.0",
     "react-dom": "18.3.0",
-    "react-router-dom": "6.16.0"
+    "react-router-dom": "7.17.0"
   },
   "devDependencies": {
     "@microsoft/signalr": "7.0.11",
